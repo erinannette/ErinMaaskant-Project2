@@ -345,9 +345,6 @@ header {
             padding: 50px 0 0;
             text-align: center;
         }
-        .section__list {
-
-        }
     }
     // SERVICES ONE
     .servicesOne {
@@ -407,7 +404,9 @@ header {
     .section__h1 {
         @include titleStyles(70);
     }
-
+    .hero {
+        align-items: center;
+    }
     // SERVICES ONE
     .servicesOne {
         .section__content {
