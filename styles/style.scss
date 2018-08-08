@@ -89,6 +89,12 @@ img {
         &--center {
             text-align: center;
         }
+        &--black {
+            background-color: black;
+            &:hover {
+                background-color: $dkblue;
+            }
+        }
     }
     &__form--emailLarge {
         .email {
@@ -247,11 +253,12 @@ header {
     .gallery {
         padding: 30px 0 100px 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .gallery__content {
+        margin: 10px;
         display: flex;
-        justify-content: space-between;
         position: relative;
         .gallery__rollover {
             background-color: rgba(black, 0.6);
@@ -365,6 +372,9 @@ header {
 }
 
 @media (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+    }
     .section__grid {
         flex-wrap: wrap;
         &--bottom {
@@ -413,5 +423,10 @@ header {
         .gallery__cell {
             width: 100%;
         }
+    }
+}
+@media (max-width: 400px) {
+    .section__h1 {
+        @include titleStyles(60);
     }
 }

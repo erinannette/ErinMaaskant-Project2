@@ -26,9 +26,31 @@ $grey: #898989;
         }
     }
 }
-
+// ----- RESPONSIVENESS -----
 @media (max-width: 1100px) {
-    .navBar__list {
+    .navBar {
         flex-direction: column;
+        flex-wrap: wrap;
+        &__container--left {
+            width: 100%;
+        }
+        &__container--right {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .navBar__list {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .navBar {
+        justify-content: center;
+        &__list {
+            font-size: 1.8rem;
+        }
     }
 }

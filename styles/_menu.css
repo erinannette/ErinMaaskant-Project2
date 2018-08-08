@@ -24,8 +24,15 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .navBar__list .navBar__link {
-    padding: 0 15px; }
-    .navBar__list .navBar__link:hover {
-      color: #0e5f88;
-      text-shadow: 2px 1px 3px #8ecceb; }
+  .navBar__list .navBar__link:hover {
+    color: #0e5f88;
+    text-shadow: 2px 1px 3px #8ecceb; }
+
+@media (max-width: 1100px) {
+  .navBar {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .navBar__container--left {
+      width: 100%; }
+    .navBar__container--right {
+      width: 100%; } }
