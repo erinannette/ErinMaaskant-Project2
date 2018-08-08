@@ -1,0 +1,28 @@
+$dkblue: #0e5f88;
+$ltblue: #8ecceb;
+$grey: #898989;
+
+.navBar {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar__container--left {
+    width: 40%;
+}
+.navBar__container--right {
+    width: 60%;
+}
+.navBar__list {
+    display: flex;
+    justify-content: space-between;
+    .navBar__link {
+        // padding: 0 15px;
+        &:hover {
+            color: $dkblue;
+            text-shadow: 2px 1px 3px #8ecceb;
+        }
+    }
+}

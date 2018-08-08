@@ -1,0 +1,417 @@
+@import "setup.scss";
+@import "typography.scss";
+@import "menu.scss";
+
+$dkblue: #0e5f88;
+$ltblue: #8ecceb;
+$ltgrey: #f1f3f3;
+$dkgrey: #1d1d1d;
+$textgrey: #5d5e5d;
+
+
+body {
+    max-width: 1650px;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+
+// ---- COMMON STYLES ---- //
+.section {
+    // padding: 100px 0;
+    // border: 1px solid red;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__block {
+        padding: 50px 0;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 25px;
+        &--check::before {
+            content: '✓';
+            padding-right: 5px;
+        }
+    }
+    &__h2 {
+        padding-top: 50px;
+        &--indent {
+            padding-left: 80px;
+        }
+    }
+    &__h3 {
+        padding-top: 50px;
+    }
+    &__p {
+        padding-top: 30px;
+    }
+    &__p--smallPadding {
+        padding-top: 15px;
+    }
+    &__icon--large {
+        padding: 25px 0;
+    }
+    &__icon--white {
+        padding-right: 15px;
+        color: white;
+    }
+    &__icon--right {
+        padding-left: 15px;
+    }
+    &__a {
+        padding-top: 30px;
+        display: block;
+    }
+    &__button {
+        margin: 30px 0 100px 0;
+        padding: 10px 40px;
+        background-color: $dkblue;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        display: block;
+        &:hover {
+            color: $ltgrey;
+            text-shadow: 1px 1px 3px black;
+            background-color:$ltblue;
+            // border: 1px solid $dkblue;
+            transition: all 0.3s;
+        }
+        &--center {
+            text-align: center;
+        }
+    }
+    &__form--emailLarge {
+        .email {
+            width: 600px;
+            margin: 35px 0 20px 0;
+            padding: 10px 0;
+            border: 1px solid black;
+            background-color: $ltblue;
+            
+        }
+    }
+}
+
+// ---- HEADER ---- //
+header {
+    height: 100vh;
+    background-image: url(../assets/image-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    background-position: center;
+}
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+// ---- WELCOME ---- //
+
+// ---- WHY CHOOSE US ---- //
+.whyChooseUs {
+    width: 100%;
+    display: flex;
+    // border: 1px solid red;
+    .sectionFullBleed__content {
+        width: 50%;
+        background-color: $ltgrey;
+        display: flex;
+        flex-direction: column;
+        .section__list {
+            padding-left: 80px;
+        }
+    }
+    .sectionFullBleed__image {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+// ---- SERVICES - ROW OF 3 BOXES ---- //
+.servicesOne {
+    .section__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section__block {
+        width: 32%;
+        margin: 50px 0;
+        border: 1px solid $ltblue;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            background-color: $ltblue;
+            transition: all 0.3s;
+        }
+    }
+}
+// ---- PEOPLE SAY ABOUT US ---- //
+.peopleSay {
+    background-color: $dkgrey;
+    padding-bottom: 50px;
+    .section__swipe {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section__image {
+        width: 150px;
+    }
+}
+// ---- GALLERY ---- //
+.gallery {
+    display: flex;
+}
+.gallery__cell {
+    position: relative;
+    .gallery__rollover--outlined {
+        background-color: rgba(black, 0.7);
+        margin: 25px;
+        border: 1px solid white;
+        border-radius: 15px;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.gallery__cell:hover .gallery__rollover--outlined {
+    opacity: .9;
+}
+// ---- SERVICES ---- //
+.servicesTwo {
+    padding: 50px 0 100px 0;
+}
+.section__grid {
+    padding: 10px 0;
+    display: flex;
+    &--bottom {
+        flex-direction: row-reverse;
+    }
+    .section__content {
+        padding: 0 10px;
+        position: relative;
+    }
+    .section__content, .section__image {
+        width: 50%;
+        .section__h3--one::before {
+            content: '1.';
+            font-family: $basefont1;
+            font-size: 14rem;
+            color: $ltgrey;
+            position: absolute;
+            top: -25px;
+            left: 5px;
+        }
+        .section__h3--two::before {
+            content: '2.';
+            font-family: $basefont1;
+            font-size: 14rem;
+            color: $ltgrey;
+            position: absolute;
+            top: -25px;
+            left: 5px;
+        }
+    }
+}
+// ---- ASK A QUESTION ---- //
+.askAQuestion {
+    background-color: $ltblue;
+}
+// ---- OUR TEAM ---- //
+.ourTeam {
+    .gallery {
+        padding: 30px 0 100px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .gallery__content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .gallery__rollover {
+            background-color: rgba(black, 0.6);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .gallery__content:hover .gallery__rollover {
+        opacity: .9;
+    }
+}
+
+// ---- FOOTER ---- //
+.footer {
+    background-color: $dkgrey;
+    padding-top: 125px;
+    .footerTop {
+        border-bottom: 1px solid $textgrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__column {
+            width: 32%;
+            padding-bottom: 50px;
+        }
+    }
+    &__copyright {
+        padding: 50px 0;
+    }
+}
+.footer__list {
+    padding-top: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &--grid {
+        justify-content: space-between;
+    }
+    &--spacing {
+        justify-content: center;
+    }
+    .footer__li {
+        width: 23%;
+        padding-top: 8px;
+    }
+    .footer__link {
+        padding: 0 20px;
+    }
+}
+
+///////////////////////////
+//  ---- RESPONSIVE ---- //
+
+@media (max-width: 1100px) {
+    .gallery {
+        flex-wrap: wrap;
+        .gallery__cell {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    // WHY CHOOSE US
+    .whyChooseUs {
+        flex-wrap: wrap;
+        .sectionFullBleed__content,
+        .sectionFullBleed__image {
+            width: 100%;
+        }
+        .section__h2--indent {
+            padding: 50px 0 0;
+            text-align: center;
+        }
+        .section__list {
+
+        }
+    }
+    // SERVICES ONE
+    .servicesOne {
+        .section__content {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .section__block {
+            width: calc(50% - 20px);
+            margin: 10px;
+        }
+    }
+    // ASK A QUESTION
+    .section__form--emailLarge {
+        .email {
+            width: 370px;
+            margin: 35px 0 20px 0;
+            padding: 10px 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .section__grid {
+        flex-wrap: wrap;
+        &--bottom {
+            flex-direction: row;
+        }
+        .section__content {
+            padding: 0 10px;
+            position: relative;
+        }
+        .section__content, .section__image {
+            width: 100%;
+        }
+    }
+
+    // FOOTER
+    .footer {
+        .footerTop {
+            flex-wrap: wrap;
+            &__column {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        width: 90%;
+    }
+    .section__h1 {
+        @include titleStyles(70);
+    }
+
+    // SERVICES ONE
+    .servicesOne {
+        .section__content {
+            flex-wrap: wrap;
+        }
+        .section__block {
+            width: 100%;
+        }
+    }
+    // GALLERY
+    .gallery {
+        flex-wrap: wrap;
+        .gallery__cell {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+$basefont1: 'Montserrat', sans-serif;
+$basefont2: 'Open Sans', sans-serif;
+
+$dkblue: #0e5f88;
+$ltblue: #8ecceb;
+$ltgrey: #f1f3f3;
+$dkgrey: #1d1d1d;
+$textgrey: #5d5e5d;
+
+@mixin titleStyles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $basefont1;
+    text-transform: uppercase;
+    text-align: center;
+}
+@mixin paragraphStyles($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+    font-family: $basefont2;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+.navBar__h2 {
+    @include titleStyles(48);
+    text-align: left;
+}
+.section__h1 {
+    @include titleStyles(82);
+}
+.section__h2 {
+    @include titleStyles(48);
+    &--left {
+        text-align: left;
+    }
+    &--white {
+        color: white;
+    }
+}
+.section__h3, .gallery__h3 {
+    @include titleStyles(34);
+    font-weight: 600;
+    &--white {
+        color: white;
+        font-weight: 600;
+    }
+    &--lower {
+        text-transform: capitalize;
+    }
+    &--left {
+        text-align: left;
+    }
+}
+.section__h4, .gallery__h4 {
+    @include titleStyles(24);
+    font-weight: 600;
+    &--white {
+        color: white;
+    }
+    &--upper {
+        text-transform: uppercase;
+    }
+    &--left {
+        text-align: left;
+    }
+}
+.section__p, .gallery__p {
+    @include paragraphStyles(16);
+    &--large {
+        font-size: 24px;
+        font-size: 2.4rem;
+        color: $textgrey; 
+    }
+    &--left {
+        text-align: left;
+    }
+    &--title {
+        font-weight: 700;
+    }
+    &--white {
+        color: white;
+    }
+    &--italic {
+        font-style: italic;
+    }
+}
+.section__form--emailLarge {
+    .email {
+        @include titleStyles(16);
+        color: black;
+    }
+}
+.section__list {
+    @include paragraphStyles(16);
+}
+.section__button {
+    @include titleStyles(24);
+}
+.section__icon {
+    &--large {
+        font-size: 48px;
+        font-size: 4.8rem;
+    }
+    &--white {
+        color: white;
+    }
+}
+.section__a, .footer__a {
+    @include paragraphStyles(16);
+    text-decoration: none;
+    text-align: left;
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        color: $ltblue;
+    }
+    &--white {
+        color: white;
+    }
+    &--upper {
+        text-transform: uppercase;
+    }
+}
+.navBar__list {
+    @include titleStyles(24);
+    font-weight: 700;
+    list-style-type: none;
+    .navBar__link {
+        color: black;
+        text-decoration: none;
+    }
+}
+.footer__copyright {
+    @include paragraphStyles(16);
+    color: white;
+    text-align: center;
+}
+

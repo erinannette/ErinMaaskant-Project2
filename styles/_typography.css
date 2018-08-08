@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
+
+.section__h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 82px;
+  font-size: 8.2rem;
+  text-transform: uppercase; }
+
+.section__h2, .navBar__h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+  text-transform: uppercase; }
+
+.section__h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-size: 3.4rem;
+  text-transform: uppercase; }
+
+.section__h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase; }
+
+.section__p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: center; }
+  .section__p .section__p--large {
+    font-size: 24px;
+    font-size: 2.4rem; }
+  .section__p .section__p--left {
+    text-align: left; }
+
+.section__button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  background-color: #0e5f88; }
+  .section__button .section__button--black {
+    background-color: black; }
