@@ -1,324 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Corporate</title>
+    <title>HiMama</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <!-- ---- HEADER ---- -->
     <header>
-        <div class="wrapper">
-            <!--  NAVIGATION  -->
-            <div class="navBar">
-                <div class="navBar__container--left">
-                    <h2 class="navBar__h2">Corporate</h2>
-                </div>
-
-                <nav class="navBar__container--right">
-                    <ul class="navBar__list">
-                        <li class="navBar__listItem--active"><a class="navBar__link navBar__link--active" href="#">Home</a></li>
-                        <li class="navBar__listItem"><a class="navBar__link" href="#">Demo</a></li>
-                        <li class="navBar__listItem"><a class="navBar__link" href="#">Blog</a></li>
-                        <li class="navBar__listItem"><a class="navBar__link" href="#">Pages</a></li>
-                        <li class="navBar__listItem"><a class="navBar__link" href="#">About Us</a></li>
-                    </ul>
-                </nav>
+        <div class="logo section">
+            <div class="wrapper">
+                <img src="../assets/horizontal-logo.png">
             </div>
+        </div>
+        <div class="wrapper">
+
             <!--  HERO  -->
             <div class="hero section">
-                <h1 class="section__h1">Welcome</h1>
-                <h4 class="section__h4">to my corporate website</h4>
-                <a href="#" class="section__button section__button--center">Start</a>
+                <h1 class="section__h1">Welcome to HiMama!</h1>
+                <h2 class="section__h2 section__h2--purple">Let's get started.</h2>
+                <div class="call-to-action">
+                    <div class="box">
+                        <p class="section__p section__p--purple">
+                            We'll begin by creating your child's profile.
+                            Just fill in a few details in the form below...</p>
+                    </div>
+                    <div class="box">
+                        <p class="section__p section__p--purple">
+                            Then we'll send it over to your daycare with an invitation to try <span>HiMama</span> for free!</p>
+                    </div>
+                </div>
             </div>
         </div><!-- WRAPPER CLOSE -->
     </header>
-<!-- ---- WELCOME TO CORPORATE ---- -->
-    <section class="welcome section">
+<!-- ---- FORM ---- -->
+    <section class="section__form">
         <div class="wrapper">
-            <div class="section__content">
-                <h2 class="section__h2">Welcome to <span class="section__text--blue">Corporate</span></h2>
-                <p class="section__p section__p--large">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi nec justo id lectus tempus.</p>
-                <a href="#" class="section__button section__button--center">Know More
-                </a>
-            </div>
-        </div>
-    </section>
-<!-- ---- WHY CHOOSE US ---- -->
-    <section class="whyChooseUs sectionFullBleed">
-        <div class="sectionFullBleed__content">
-            <h2 class="section__h2 section__h2--left section__h2--indent">Why Choose Us?</h2>
-            <ul class="section__list">
+            <img src="../assets/kids-at-desk.png">
+            <div class="parent-form">
+                <form method="POST" action="thankyou.html" autocomplete="off" name="write-us">
 
-                <li class="section__listItem--one">
-                    <p class="section__p section__p--left section__p--large section__p--title">
-                    15 Years of experience</p>
-                    <p class="section__p section__p--left section__p--smallPadding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. </p>
-                </li>
+                    <!-- ---- PARENT INFO ---- -->
 
-                <div>
-                    <ul>
-                        <li class="section__listItem--two">
-                            <p class="section__p section__p--left section__p--large section__p--title">
-                            900+ Happy clients</p>
-                            <p class="section__p section__p--left section__p--smallPadding">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    <label class="visuallyhidden" for="full-name">Your name *</label>
+                    <input type="text" class="full-name" name="Full Name" required="true" placeholder="Your name *">
 
-        <div class="sectionFullBleed__image">
-            <img src="assets/image-4.jpeg" class="section__image--right" alt="Two businesspeople shaking hands">
-        </div>
-    </section>
-<!-- ---- SERVICES ---- -->
-    <section class="servicesOne section">
-        <div class="wrapper">
-            <h2 class="section__h2">Services</h2>
+                    <label class="visuallyhidden" for="email">Your email *</label>
+                    <input type="email" class="email" name="_replyto" required="true" placeholder="Your email *">
 
-            <div class="section__content">
+                    <label class="visuallyhidden" for="full-name">Your child's name *</label>
+                    <input type="text" class="full-name" name="Child's Name" required="true" placeholder="Your child's name *">
 
-                <div class="section__block">
-                    <i class="section__icon--large fas fa-object-group"></i>
-                    <h4 class="section__h4">UX/UI Design</h4>
-                    <p class="section__p">
-                        Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
-                    <ul class="section__list">
-                        <li class="section__list--check">Lorem ipsum</li>
-                        <li class="section__list--check">Dolor sit amet</li>
-                        <li class="section__list--check">Cons ectetuer</li>
-                    </ul>
-                </div>
+                    <label class="visuallyhidden"  for="full-name">Add your child's photo! (optional)</label>
+                    <input type="file" size="60" name="photo" class="photo" value="Add your child's photo! (optional)" placeholder="Add your child's photo! (optional)">
 
-                <div class="section__block">
-                    <i class="section__icon--large fas fa-laptop"></i>
-                    <h4 class="section__h4">Programming</h4>
-                    <p class="section__p">
-                        Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
-                    <ul class="section__list">
-                        <li class="section__list--check">Lorem ipsum</li>
-                        <li class="section__list--check">Dolor sit amet</li>
-                        <li class="section__list--check">Cons ectetuer</li>
-                    </ul>
-                </div>
+                    <!-- ---- DAYCARE INFO ---- -->
+            
+                    <label class="visuallyhidden" for="full-name">Name of daycare</label>
+                    <input type="text" class="full-name daycare" name="Full Name" required="true" placeholder="Name of daycare *">
+            
+                    <label class="visuallyhidden" for="email">Daycare email</label>
+                    <input type="email" class="email daycare" name="_replyto" placeholder="Daycare email">
+            
+                    <label class="visuallyhidden" for="full-name">Contact at daycare</label>
+                    <input type="text" class="full-name " name="Full Name" required="true" placeholder="Daycare Contact *">
+            
+                    <label class="visuallyhidden" for="email">Contact phone number</label>
+                    <input type="tel" class="phone" name="_replyto" required="true" placeholder="Daycare phone number *">
+            
+                    <label class="visuallyhidden button" for="submit">Send It Over</label>
+                    <input type="submit" class="submit button" name="Submit" value="Send it over!" placeholder="Send it over!">
 
-                <div class="section__block">
-                    <i class="section__icon--large fas fa-chart-line"></i>
-                    <h4 class="section__h4">Analytics</h4>
-                    <p class="section__p">
-                        Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
-                    <ul class="section__list">
-                        <li class="section__list--check">Lorem ipsum</li>
-                        <li class="section__list--check">Dolor sit amet</li>
-                        <li class="section__list--check">Cons ectetuer</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-<!-- ---- PEOPLE SAY ABOUT US ---- -->
-    <section class="peopleSay section">
-        <div class="wrapper">
-            <h2 class="section__h2 section__h2--white">People Say About Us</h2>
-            <div class="section__swipe">
-                <i class="section__icon--white section__icon--large fas fa-angle-left"></i>
-                <img class="section__image" src="assets/image-5.jpeg" alt="Portrait of man with glasses">
-                <i class="section__icon--white section__icon--large section__icon--right fas fa-angle-right"></i>
-            </div>
-            <p class="section__p section__p--large section__p--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet, augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            </p>
-            <p class="section__p section__p--large section__p--white section__p--italic">Lewis</p>
-        </div>
-    </section>
-<!-- ---- GALLERY ---- -->
-    <section class="gallery">
-        <div class="gallery__cell">
-            <img class="gallery__image" src="assets/image-6.jpeg" alt="Hands writing on a clipboard">
-            <div class="gallery__rollover--outlined">
-                <h3 class="gallery__h3 gallery__h3--white">
-                Project #1</h3> 
-                <p class="gallery__p gallery__p--white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-        <div class="gallery__cell">
-            <img class="gallery__image" src="assets/image-7.jpeg" alt="Pattern on inside of a roof">
-            <div class="gallery__rollover--outlined">
-                <h3 class="gallery__h3 gallery__h3--white">
-                Project #2</h3>
-                <p class="gallery__p gallery__p--white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-        <div class="gallery__cell">
-            <img class="gallery__image" src="assets/image-8.jpeg" alt="Tall buildings, looking up">
-            <div class="gallery__rollover--outlined">
-                <h3 class="gallery__h3 gallery__h3--white">
-                Project #3</h3>
-                <p class="gallery__p gallery__p--white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-        <div class="gallery__cell">
-            <img class="gallery__image" src="assets/image-9.jpeg" alt="Two hands holding takeaway coffee cups">
-            <div class="gallery__rollover--outlined">
-                <h3 class="gallery__h3 gallery__h3--white">
-                Project #4</h3>
-                <p class="gallery__p gallery__p--white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </section>
-<!-- ---- SERVICES ---- -->
-    <section class="servicesTwo section">
-        <div class="wrapper">
-            <h2 class="section__h2">Services</h2>
-            <div class="section__grid section__grid--top">
-                <div class="section__content">
-                    <h3 class="section__h3 section__h3--one">Design</h3>
-                    <p class="section__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation. ullamco laboris nisi ut.</p>
-                    <a href="#" class="section__button">More</a>
-                </div>
-                <div class="section__image">
-                    <img src="assets/image-10.jpeg" class="section__image--half" alt="graph thing?">
-                </div>
-            </div>
-            <div class="section__grid section__grid--bottom">
-                <div class="section__content">
-                    <h3 class="section__h3 section__h3--two">Analytics</h3>
-                    <p class="section__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. ullamco laboris nisi ut.</p>
-                    <a href="#" class="section__button">More</a>
-                </div>
-                <div class="section__image">
-                    <img src="assets/image-11.jpeg" class="section__image--half" alt="laptop with analytics">
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- ---- ASK A QUESTION ---- -->
-    <section class="askAQuestion">
-        <div class="wrapper">
-            <div class="section__content">
-                <h2 class="section__h2">Ask a Question</h2>
-
-                <form action="sendEmail.php" method="GET" class="section__form--emailLarge" autocomplete="on" name="section__form--emailLarge">
-                    <label label class="visuallyhidden" for="email">Email</label>
-                    <input type="email" class="email" name="email" placeholder="Email">
+                    <!-- <input type="hidden" name="redirect" value="../thankyou.html"> -->
+            
                 </form>
-
-                <a href="#" class="section__button section__button--black">Send</a>
             </div>
         </div>
     </section>
-<!-- ---- OUR TEAM ---- -->
-    <section class="ourTeam section">
+
+<!-- ---- SERVICES ---- -->
+    <section class="how-does-it-work">
         <div class="wrapper">
-            <h2 class="section__h2">Our Team</h2>
-            <div class="gallery">
-                <div class="gallery__content">
-                    <img src="assets/image-12.jpeg" class="gallery__image--margin" alt="Male staff member">
-                    <div class="gallery__rollover">
-                        <h3 class="gallery__h3 gallery__h3--white gallery__h3--lower">
-                        William Smith</h3>
-                        <h4 class="gallery__h4 gallery__h4--white
-                        gallery__h4--upper">
-                        Programmer</h4>
-                    </div>
+            <h2 class="section__h2 section__h2--purple">How Does It Work?</h2>
+            <p class="section__p section__p--purple">
+                Talk with your child about their day in a way that engages and excites them!
+            </p>
+            <p class="section__p section__p--purple">
+                Change the way you interact with your child's teacher or caregiver!
+            </p>
+            <p class="section__p section__p--purple">
+                Never forget that bag of diapers again.
+            </p>
+
+            <div class="section__content">
+                <div class="section__block">
+                    <img src="../assets/observations.png">
+                    <h4 class="section__h4">
+                        Digital Scrapbook</h4>
+                    <ul class="section__list">
+                        <li class="section__list--check">
+                            Get photos of your child each day</li>
+                        <li class="section__list--check">
+                            Manage your child's online portfolio</li>
+                    </ul>
                 </div>
 
-                <div class="gallery__content">
-                    <img src="assets/image-13.jpeg" class="gallery__image--margin" alt="Male staff member">
-                    <div class="gallery__rollover">
-                        <h3 class="gallery__h3 gallery__h3--white gallery__h3--lower">
-                        David Regan</h3>
-                        <h4 class="gallery__h4 gallery__h4--white
-                        gallery__h4--upper">
-                        Programmer</h4>
-                    </div>
+                <div class="section__block">
+                    <img src="../assets/schedule.png">
+                    <h4 class="section__h4">
+                        Milestone Tracker</h4>
+                    <ul class="section__list">
+                        <li class="section__list--check">
+                            Log activities and milestones</li>
+                        <li class="section__list--check">
+                            Handy checklist to see what's coming</li>
+                    </ul>
                 </div>
 
-                <div class="gallery__content">
-                    <img src="assets/image-14.jpeg" class="gallery__image--margin" alt="Female staff member">
-                    <div class="gallery__rollover">
-                        <h3 class="gallery__h3 gallery__h3--white gallery__h3--lower">
-                        Matilda Doran</h3>
-                        <h4 class="gallery__h4 gallery__h4--white
-                        gallery__h4--upper">
-                        Programmer</h4>
-                    </div>
+                <div class="section__block">
+                    <img src="../assets/media.png">
+                    <h4 class="section__h4">
+                        Private Sharing</h4>
+                    <ul class="section__list">
+                        <li class="section__list--check">
+                            Add grandparents so they can follow along</li>
+                        <li class="section__list--check">
+                            Share updates with close family and friends</li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="section__content">
+                <div class="section__block">
+                    <img src="../assets/calendar.png">
+                    <h4 class="section__h4">
+                        Teacher Communication</h4>
+                    <ul class="section__list">
+                        <li class="section__list--check">
+                            Communicate with teachers directly</li>
+                        <li class="section__list--check">
+                            Receive notices for upcoming events</li>
+                    </ul>
+                </div>
+            
+                <div class="section__block">
+                    <img src="../assets/daily-sheet.png">
+                    <h4 class="section__h4">
+                        Preschool Updates</h4>
+                    <ul class="section__list">
+                        <li class="section__list--check">
+                            Run out of diapers? Receive notices directly so you don't forget</li>
+                        <li class="section__list--check">
+                            Find out what your child ate for lunch, and how how long they napped</li>
+                    </ul>
+                </div>
+            
+                <div class="section__block">
+                    <img src="../assets/sso.png">
+                    <h4 class="section__h4">Access From
+                    Any Device</h4>
+                    <ul class="section__list">
+                        <li class="section__list--check">
+                            Use your phone to message teachers or care providers directly</li>
+                        <li class="section__list--check">
+                            Email from your desktop computer using a unique email address for each child</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
+
 <!-- ---- FOOTER  ---- -->
     <footer class="footer">
         <div class="wrapper">
         <!-- FOOTER TOP -->
-            <div class="footerTop">
-                <div class="footerTop__column">
+            <div class="footer-top">
+                <div class="footer-top__column">
                     <h4 class="section__h4 section__h4--white section__h4--left">Contact</h4>
 
-                    <a href="mailto:info@hackeryou.com" class="section__a section__a--white">
-                        <i class="section__icon--white far fa-envelope"></i> info@hackeryou.com</a>
+                    <a href="mailto:support@himama.com" class="section__a section__a--white">
+                        <i class="section__icon--white far fa-envelope"></i> support@himama.com</a>
 
                     <a href="#" class="section__a section__a--white">
-                        <i class="section__icon--white fas fa-phone"></i>123-456-7890</a>
+                        <i class="section__icon--white fas fa-phone"></i>1-800-905-1876</a>
 
                     <a href="https://www.google.com/maps/@43.6466368,-79.3812451,14.03z" target="_blank" class="section__a section__a--white">
                         <i class="section__icon--white fas fa-map-marker-alt"></i> Toronto, Ontario</a>
 
-                    <form class="footerTop__form--emailWhite"></form>
-
                 </div>
-                <div class="footerTop__column">
-                    <h4 class="section__h4 section__h4--white section__h4--left">About Us</h4>
-                    <p class="section__p section__p--white section__p--left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="footerTop__column">
-                    <h4 class="section__h4 section__h4--white section__h4--left">Instagram</h4>
-
-                    <div class="footer__grid">
-                        <ul class="footer__list footer__list--grid">
-                            <li class="footer__li">
-                                <img src="assets/image-15.jpeg" class="footer__liImg" alt="Instagram shot 1"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-16.jpeg" class="footer__liImg" alt="Instagram shot 2"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-17.jpeg"  class="footer__liImg" alt="Instagram shot 3"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-18.jpeg"  class="footer__liImg" alt="Instagram shot 4"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-19.jpeg"  class="footer__liImg" alt="Instagram shot 5"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-20.jpeg"  class="footer__liImg" alt="Instagram shot 6"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-21.jpeg"  class="footer__liImg" alt="Instagram shot 7"></li>
-                            <li class="footer__li">
-                                <img src="assets/image-22.jpeg"  class="footer__liImg" alt="Instagram shot 8"></li>
-                        </ul>
-                    </div>
+                <div class="footer-top__column">
+                    <h4 class="section__h4 section__h4--white section__h4--left">Childcare Apps for Superstar Centres</h4>
+                    <p class="section__p section__p--white section__p--left">So teachers can spend more time with the children, and EVERYONE can spend less time on paperwork... and much more.</p>
+                    <p class="section__p section__p--white section__p--left">
+                    It's child care software to actually get excited about!</p>
                 </div>
             </div>
         <!-- FOOTER BOTTOM -->
-            <div class="footerBottom">
-                <h3 class="section__h3 section__h3--white">Corporate</h3>
-                    <ul class="footer__list footer__list--spacing">
-                        <li class="footer__link">
-                            <a class="footer__a footer__a--upper footer__a--white" href="#">Home</a></li>
-                        <li class="footer__link">
-                            <a class="footer__a footer__a--upper  footer__a--white" href="#">Demo</a></li>
-                        <li class="footer__link">
-                            <a class="footer__a footer__a--upper  footer__a--white" href="#">Blog</a></li>
-                        <li class="footer__link">
-                            <a class="footer__a footer__a--upper  footer__a--white" href="#">Pages</a></li>
-                        <li class="footer__link">
-                            <a class="footer__a footer__a--upper  footer__a--white" href="#">About Us</a></li>
-                    </ul>
+            <div class="footer-bottom">
+                <img src="../assets/horizontal-logo.png">
             </div>
 
             <div class="footer__copyright">2018 All rights reserved <i class="far fa-copyright"></i>
